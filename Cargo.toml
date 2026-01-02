@@ -1,0 +1,18 @@
+[package]
+name = "assert-size-derive"
+version = "0.1.0"
+authors = ["Dalton Caron <dpcaron99@gmail.com>"]
+categories = ["development-tools", "rust-patterns"]
+description = "Compile time type size assertion attribute macro"
+edition = "2021"
+keywords = ["macros", "static", "size", "assert"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/dolphindalt/assert-size-derive"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+quote = "1"
+syn = { version="2.0", features = ["full"] }
